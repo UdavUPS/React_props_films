@@ -17,15 +17,7 @@ export function FilmCart({filmName, bunerURL, price, count, liked, category="Ñ„Ð
     
     const styles = {
         section: {
-            textTransform: "uppercase",
-            position: "relative",
             backgroundColor: fonColor,
-            marginLeft: "175px",
-            bottom: "215px",
-            padding: "2.5% 10px",
-            color: "rgba(255, 255, 255, 0.792)",
-            boxShadow: "5px 5px 5px rgba(0, 0, 0, 0.26)",
-            display: "inline-block"
         }
       }
 

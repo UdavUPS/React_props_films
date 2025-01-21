@@ -27,17 +27,17 @@
     /* z-index: 0; */
 }
 
-/* .cart__foto__movie-category{
+.cart__foto__movie-category{
   text-transform: uppercase;
   position: relative;
-  background-color: orange;
+  /* background-color: orange; */
   margin-left: 175px;
   bottom: 215px;
   padding: 2.5% 10px;
   color: rgba(255, 255, 255, 0.792);
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
   display: inline-block;
-} */
+}
 
 .cart__center {
     /* border: 1px solid black; */
