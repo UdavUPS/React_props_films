@@ -1,9 +1,13 @@
 import './Like.css';
 import noLike from '../../img/noLiked.png';
 import yesLike from '../../img/liked.png';
-import { useState } from 'react'; 
+import { useState } from 'react';
 
-export function Like({like}) {
+type Props = {
+    like: boolean;
+}
+
+export function Like({like}: Props) {
     let [liked, setLike] = useState(like);
 
 

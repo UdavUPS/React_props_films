@@ -1,5 +1,5 @@
 /* import { items } from '../js/object.js'; */ 
-import { FilmCart } from './FilmCarts/FilmCarts.jsx';
+import { FilmCart } from './FilmCarts/FilmCarts.tsx';
 
 
 

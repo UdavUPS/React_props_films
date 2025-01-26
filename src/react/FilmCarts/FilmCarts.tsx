@@ -1,10 +1,20 @@
 import './FilmCarts.css';
-import {Stars} from '../Stars/Stars.jsx';
-import {Like} from '../Like/Like.jsx';
-import {Share} from '../Share/Share.jsx';
+import {Stars} from '../Stars/Stars.tsx';
+import {Like} from '../Like/Like.tsx';
+import {Share} from '../Share/Share.tsx';
+
+type Props = {
+    filmName: string;
+    bunerURL: string;
+    price: number;
+    count: number;
+    liked: boolean;
+    category: string;
+    labColor: string;
+}
 
 
-export function FilmCart({filmName, bunerURL, price, count, liked, category="фильм", labColor }) {
+export function FilmCart ({filmName, bunerURL, price, count, liked, category="фильм", labColor }: Props) {
     let filmTitle: string = filmName;
     let buner: any = bunerURL;
     let cost: number = price;

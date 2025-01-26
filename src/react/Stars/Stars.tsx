@@ -1,6 +1,10 @@
 import './Stars.css';
 
-export function Stars(props) {
+type Props = {
+    count: number;
+}
+
+export function Stars(props: Props) {
     let count: number;
     
     if (props.count >= 0 && props.count <= 5) {
@@ -9,7 +13,7 @@ export function Stars(props) {
         count = 0;
     }
 
-    let elem: array = [];
+    let elem: Array<any> = [];
 
     const star = (
             <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
