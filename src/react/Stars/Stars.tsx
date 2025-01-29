@@ -13,7 +13,7 @@ export function Stars(props: Props) {
         count = 0;
     }
 
-    let elem: Array<any> = [];
+    let elem: Array<object> = [];
 
     const star = (
             <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
@@ -29,6 +29,8 @@ export function Stars(props: Props) {
             </li>
         );
     }
+
+
     
     return (
         <ul className="card-body-stars u-clearfix">

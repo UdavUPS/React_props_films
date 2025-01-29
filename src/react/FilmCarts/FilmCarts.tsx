@@ -13,16 +13,23 @@ type Props = {
     labColor: string;
 }
 
+interface colorColectionInt {
+    action: string,
+    vestern: string
+};
+
+
 
 export function FilmCart ({filmName, bunerURL, price, count, liked, category="фильм", labColor }: Props) {
     let filmTitle: string = filmName;
-    let buner: any = bunerURL;
+    let buner: string = bunerURL;
     let cost: number = price;
-    const colorColection: any = {
+    const colorColection: colorColectionInt = {
         action: "orange",
         vestern: "brown"
     };
-    let fonColor: any = colorColection[labColor];
+    
+    let fonColor: string = colorColection[labColor];
 
     
     const styles = {
