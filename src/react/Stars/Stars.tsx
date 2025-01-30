@@ -4,6 +4,15 @@ type Props = {
     count: number;
 }
 
+/* interface elemObject {
+    $$typeof: symbol,
+    type: string,
+    key: string,
+    props: {
+
+    }
+}; */
+
 export function Stars(props: Props) {
     let count: number;
     
@@ -13,7 +22,7 @@ export function Stars(props: Props) {
         count = 0;
     }
 
-    let elem: Array<object> = [];
+    let elem: Array<any> = [];
 
     const star = (
             <svg fill="#D3BCA2" height="28" viewBox="0 0 18 18" width="28" xmlns="http://www.w3.org/2000/svg">
@@ -30,7 +39,8 @@ export function Stars(props: Props) {
         );
     }
 
-
+    console.log(elem[0]);
+    console.log(typeof elem[0].type);
     
     return (
         <ul className="card-body-stars u-clearfix">
