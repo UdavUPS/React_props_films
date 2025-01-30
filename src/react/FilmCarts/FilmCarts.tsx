@@ -29,7 +29,7 @@ export function FilmCart ({filmName, bunerURL, price, count, liked, category="ф
         vestern: "brown"
     };
     
-    let fonColor: string = colorColection[labColor];
+    let fonColor: string = colorColection[ labColor ];
 
     
     const styles = {
